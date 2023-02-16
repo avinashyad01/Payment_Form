@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Payment form.css">
+    <title>Payment_Form</title>
+    <style>
+        
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 15px;
+    padding: 8px;
+}
+
+.container{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+fieldset{
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.main_heading{
+    text-align: center;
+}
+input[type="submit"]{
+    background-color: rgb(9, 29, 29);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: grab;
+    width: 100%;
+}
+input[type="submit"]:hover{
+    background-color: #111011;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1 class="main_heading">Payment Form</h1>
+        <hr>
+        <h2>User Information</h2>
+         
+        <p>Name: * 
+            <input type="text" required name="name" placeholder="Avinash Yadav">
+        </p>
+        <p>
+           <fieldset>
+               <legend>Gender</legend>
+               Male <input type="radio" name="Gender" id="Male">
+               Female <input type="radio" name="Gender" id="Female">
+            </fieldset>
+        </p>
+    <p>
+        Address: 
+        <textarea placeholder="Enter Your Address" name="Address" id="Address" cols="50" rows="10"></textarea>
+    </p>
+    <p>
+        Email: 
+        <input type="email" id="email" required placeholder="yavinash@gmail.com">
+    </p>
+     <p>
+        Pincode: 
+        <input type="number" name="pincode" id="pincode" placeholder="123456">
+    </p>
+     <hr>
+     <h2><b>Payment Information</b></h2>
+     <h4><b>Accepted Cards</b></h4>
+     <img src="https://usa.visa.com/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg" width=80px alt="visa">
+     <img src="https://brand.mastercard.com/content/dam/mccom/brandcenter/brand-history/brandhistory_mc1996_100_2x.png" width=75px alt="mastercard">
+     <img src="https://lh3.googleusercontent.com/lfSN8-0uxLdHSqBD9ULaZUiBRJ_9lCKK8JqHGWhdgy4WjGJNYQtQ5hPbw2RBCBfEABPTqljEVA4J2J3Pr-emxqnIZu16WIt41CE7Mg" width=80px alt="gpay">
+     <img src="http://www.logotaglines.com/wp-content/uploads/2016/08/Paytm-Logo.jpg"width=43px alt="paytm">
+     <hr>
+     <p>Card Type:
+        <select name="card type" id="card_type" required>
+            <option value="">--Select a Card Type--</option>
+            <option value="Visa">Visa</option>
+            <option value="Master Card">Master Card</option>
+            <option value="gpay">gpay<option>
+            <option value="paytm">paytm</option>
+        </select>
+     </p>
+     <p>
+        Card Number: *
+        <input type=" number" name="card_number" id="card number" required placeholder="1264cd3m6">
+     </p>
+     <p>
+        Expiration Dates: 
+        <input type="date" name="exp_date" id="exp_date "required >
+    </p>
+    <p> CVV 
+        <input type="password" name="cvv" id="cvv" required placeholder="Abc">
+    </p>
+    <input type="submit" value="Pay Now">
+   </div>
+    </form>
+</body>
+</html>
