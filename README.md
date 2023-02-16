@@ -1,3 +1,3 @@
 # Payment_Form
 New repo
-<img src = "Screenshot (3).png">
+<img src = "Screenshot (3).png"/>
