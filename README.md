@@ -1,3 +1,3 @@
 # Payment_Form
 New repo
-<img src = "Screenshot (3).png"/>
+<img src = "C:\Users\Avinash\Pictures\Screenshots\Screenshot (3).png"/>
